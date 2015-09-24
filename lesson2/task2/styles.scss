@@ -1,0 +1,46 @@
+@for $i from 1 through 3 { .item-#{$i} { width: 750px;
+                                       height: 220px;
+                                       top: 50px * $i;
+                                       left: 500px;
+                                       position: relative;
+                                       background-color: #F3F3F3;
+                                       border: 1px solid lightgrey;
+                                       -webkit-border-radius: 10px 10px 10px 10px;
+                                       border-radius: 10px 10px 10px 10px;  }
+                          }
+.ava img {
+	-o-fit-object: cover;
+	position: relative;
+	height: 160px;
+	width: 160px;
+	left: 50px;
+	top: 20px;
+}
+.flag img {
+	-o-fit-object: cover;
+	position: relative;
+	height: 10px;
+	width: 20px;
+	top: -2px;
+	border: 6px solid white;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+.star img{
+    -o-fit-object: cover;
+    position: relative;
+    float: left;
+    height: 25px;
+    width: 25px;
+    top: -5px;
+    left: 65px;
+}
+.text {
+	position: relative;
+	top: -187px;
+	left: 250px;
+}
+h2 {
+	color: blue;
+
+}

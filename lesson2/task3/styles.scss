@@ -1,0 +1,285 @@
+.header {
+	background-color: #0f375c;
+	 position: relative;
+     top: -10px;
+     /*left: -8px;*/
+     width: 100%;
+     height: 50px;
+     text-align: center;
+       }
+ @media screen and (max-width: 558px) {
+ 	.header {
+ 		height: 70px;
+ 	}
+ }
+.headertext {
+	color: lightblue;
+	position: relative;
+	text-align: center;
+	top: 16px;
+	font-size: 110%;
+}
+
+.linkunderline{
+	  color: lightgrey;
+      text-decoration: none;
+      text-align: center;
+}
+.linkunderline:hover {
+	text-decoration: underline;
+	color: lightgrey;
+}
+.rainbow {
+	    position: relative;
+	    top: -10px;
+	    height: 5px;
+	    /*left: -8px;*/
+	    width: 100%;
+		background-image: linear-gradient(to right, 
+			red 0%, red 14.28571%, 
+			orange 14.28571%, orange 28.57143%, #ff0 28.57143%, #ff0 42.85714%, 
+			green 42.85714%, green 57.14286%, 
+			blue 57.14286%, blue 71.42857%, 
+			indigo 71.42857%, indigo 85.71429%,
+			violet 85.71429%, violet 100%);
+	     }
+@mixin bg($top, $btm) {
+ background: $top;
+ background: -moz-linear-gradient(top, $top 0%, $btm 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$btm));
+ background: -webkit-linear-gradient(top, $top 0%,$btm 100%);
+ background: -o-linear-gradient(top, $top 0%,$btm 100%);
+ background: -ms-linear-gradient(top, $top 0%,$btm 100%);
+ background: linear-gradient(to bottom, $top 0%,$btm 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$btm',GradientType=0 );
+}
+
+
+.navbar-default {
+	@include bg(lightgrey, white);
+	border: none;
+	top: -10px;
+	height: auto;
+	width: 100%;
+}
+
+.image-logo {
+	position: relative;
+	height: 5em;
+	left: 20%;
+	top: 7px;
+}
+ @media screen and (max-width: 1000px) {
+      .image-logo {
+      	height: 3em;
+      }
+      .navbar .nav > li >a {
+      	font-size: 0.7em;
+      }
+      .page-header {
+      	font-size: 3em;
+      }
+ }
+.navbar-right {
+	position: relative;
+	margin-top: 50px;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	font-size: 120%;
+	color: red;
+	border: none;
+}
+.navbar .nav > li > a  {
+	color: #b740af;
+	border:none;
+}
+
+.page-header {
+     @include bg(white,lightgrey);  
+     position: relative;
+     /*left: -8px;*/
+     top: -10px;
+     width: 100%;
+     height: auto;
+     color: grey;
+     font-size: 550%;
+     text-align: center;
+    }
+.middlediv {
+	position: relative;
+	font-size: 200%;
+	color: #468499;
+	height: 300px;
+	}
+.text-middlediv {
+	position: relative;
+    top: 80px;
+    text-align: center;
+}
+.glasses {
+	position: relative;
+	width: 45%;
+	height: 45%;
+	margin-left: 4%;
+	margin-top: 10px;
+	float: left;
+}
+.underglasses {
+	position: relative;
+	background-color: #b740af;
+	/*left: -8px;*/
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+.underglasses-link {
+	position: relative;
+	padding: 8px;
+	display: inline;
+	color: white;
+	font-size: 110%;
+	top: 13px;
+}
+.uglink {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.uglink:hover {
+	text-decoration: underline;
+	color: white;
+}
+.tablelink:hover {
+    text-decoration: none;
+}
+.tableblock {
+	position: relative;
+	text-align: left;
+	margin-left: 10%;
+	margin-top: 1%;
+}
+.tableblock2 {
+	text-align: left;
+	margin-left: 10%;
+}
+.tableblock ul li {
+	display: inline-block;
+	padding: 15px;
+	}
+.tableblock2 ul li {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+}
+
+h3{
+	color: grey;
+}
+p {
+
+	color:grey;
+}
+.tablelink {
+	color: #b740af;
+	text-decoration: none;
+}
+.tablelink:hover {
+	color: black;
+}
+.footer {
+	@include bg(white, lightgrey);
+	position: relative;
+	height: 150px;
+	width: 100%;
+}
+.leftfooter {
+	position: relative;
+	width: 40%;
+	float: left;
+	font-size: 85%;
+	color: grey;
+	text-align: center;
+	top: 60px;
+	float: left;
+}
+.rightfooter {
+	position: relative;
+	width: 60%;
+	float: right;
+	text-align: center;
+	top: 50px;
+}
+.footerlink {
+	color: black;
+	text-decoration: none;
+	display: inline;
+	padding: 10px;
+}
+.footerlink:hover {
+	color: blue;
+	text-decoration: none;
+}
+ @media screen and (max-width: 1000px) {
+      .image-logo {
+      	height: 3em;
+      }
+      .navbar .nav > li >a {
+      	font-size: 0.7em;
+      }
+      .page-header {
+      	font-size: 3em;
+      }
+      .text-middlediv {
+      	font-size: 0.7em;
+            }
+     }
+@media screen and (max-width: 600px) {
+		
+	nav ul {
+		width: 100%;
+		display: block;
+		height: auto;
+		background-color: lightgrey;
+	}
+	nav ul li {
+		width: 50%;
+		float: left;
+		position: relative;
+		background-color: #CCCCCC;
+		border: 2px solid white;
+	}
+	nav li:hover {
+		background-color: grey;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+	.text-middlediv {
+			float: right;
+	}
+    .underglasses {
+    	height: 70px;
+    }
+    .tableblock .tableblock2 {
+    	display: inline-table;
+    }
+    .footer {
+    	height: 250px;
+    }
+ }
+ @media screen and (max-width: 400px){
+       nav ul li {
+       	display: block;
+       	float: none;
+       	width: 100%;
+       }
+      .page-header {
+      	font-size: 1.4em;
+      }
+     .underglasses {
+     	height: 80px;
+     	text-align: center;
+     }
+}
