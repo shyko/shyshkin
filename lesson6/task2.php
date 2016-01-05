@@ -28,3 +28,4 @@ if (!count($row) && isset($_POST['login'])) {
 	print "This login already taken";
 }
 ?>
+ffffffffffffffffffffffffffffff
